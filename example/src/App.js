@@ -15,7 +15,7 @@ var examples = [{
   code: `function App() {
   const [disabled, setDisabled] = useState(true)
   return (
-        <IconSwitch disabled = {disabled} Icon = {<img src = "/react.svg" width="80" height="80"/>} onClick = {()=>setDisabled(!disabled)}/>
+        <IconSwitch disabled = {disabled} Icon = {<img src = {process.env.PUBLIC_URL+"/react.svg"} width="80" height="80"/>} onClick = {()=>setDisabled(!disabled)}/>
         );
 }`,
   title: "Basic"
@@ -137,7 +137,7 @@ function App() {
           return (
             <div key={index} style={{ marginLeft: "50px", marginRight: "50px", marginBottom: "2rem" }}>
               <h1 style={{ textAlign: "center", marginBottom: ".5rem" }}>{code.title}</h1>
-              <LiveProvider code={code.code} scope={{ IconSwitch, useState, ReactIcon }} theme={theme} >
+              <LiveProvider code={code.code} scope={{ IconSwitch, useState, ReactIcon, process:{ env: { PUBLIC_URL: process.env.PUBLIC_URL } } }} theme={theme} >
                 <div className="wrapper">
                   <div className="editor">
                     <LiveEditor className="editorInner" />
