@@ -1,4 +1,4 @@
-<h1  align="center"><img  width = "50px"  src = "https://raw.githubusercontent.com/matthewgferrari/react-disble-icon/main/example/disable.png" /> React-Disable-Icon</h1>
+<h1  align="center"><img  width = "50px"  src = "https://raw.githubusercontent.com/matthewgferrari/react-disable-icon/main/example/disable.png" /> React-Disable-Icon</h1>
 <div align="center">
 <h4  align = "center">An icon manager to visually disable icons</h4>
 
